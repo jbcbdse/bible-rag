@@ -1,0 +1,5 @@
+.tmp/
+corpus/
+node_modules/
+.env
+

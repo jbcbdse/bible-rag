@@ -1,0 +1,23 @@
+{
+  "name": "bible-rag",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "ingest": "tsx src/ingest.ts",
+    "ingest:text": "tsx src/ingest.ts --no-embed"
+  },
+  "dependencies": {
+    "@jbcbdse/charlie-core": "^1.0.0",
+    "@jbcbdse/charlie-ollama": "^1.0.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/pg": "^8.15.5",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
