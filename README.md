@@ -81,7 +81,7 @@ Ingest reads from `corpus/`. Git ignores that directory. Translation USFM zips c
 
 `WORKS.md` is the source of truth for every work. It lists the upstream URL and license for each one.
 
-- Translations: eBible USFM, all marked public domain (WEB, KJV, ASV, YLT, Darby, Webster, OEB, BBE, BSB, Douay-Rheims 1899, Geneva 1599, JPS 1917, RV 1895). The file notes that KJV printing in the UK is restricted by letters patent, and that this does not apply to the digital copy outside the UK. "World English Bible" is a trademark of eBible.org.
+- Translations: eBible USFM, all marked public domain (WEB, KJV, ASV, YLT, Darby, Webster, OEB, BBE, BSB, Douay-Rheims 1899, Geneva 1599, JPS 1917, RV 1895). The file notes that KJV printing in the UK is restricted by letters patent, and that this does not apply to the digital copy outside the UK. WORKS.md marks BBE as public domain in the US only. "World English Bible" is a trademark of eBible.org.
 - Commentary from HelloAO: Henry, Jamieson-Fausset-Brown, Clarke, Gill, Calvin, and Keil-Delitzsch carry the CC Public Domain Mark. Tyndale Open Study Notes is CC BY-SA 4.0.
 - Douay-Rheims annotations: CC0 1.0, from the `janvier-s/original-douay-rheims` repository.
 - Not acquired: scholarship works (Easton, Smith, Hitchcock, Calvin's Institutes). Some CrossWire SWORD modules are downloaded but not extracted.
@@ -94,5 +94,5 @@ Ingest reads from `corpus/`. Git ignores that directory. Translation USFM zips c
 - No scholarship content is ingested yet. `DESIGN.md` plans it.
 - The server has no auth. It binds to 127.0.0.1 only.
 - Embeddings need a local Ollama. Changing the embedding model needs a full re-embed.
-- `DESIGN.md` plans versification mapping across translations. I did not find it in the code.
-- The repo has no tests and no license file. I have not run the pipeline end to end.
+- `DESIGN.md` plans versification mapping across translations. The code does not implement it yet.
+- The repo has no tests and no license file. The README commands are not tested end to end.
