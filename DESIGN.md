@@ -377,9 +377,9 @@ All `@jbcbdse/*` packages resolve from `https://npm.pkg.github.com`. Swap the ge
 ```
 src/ingest.ts              batch CLI
 src/mcp.ts                 HTTP listen; CharlieMcpHttpHandler at /mcp
-src/tools/                 BaseTool per MCP tool
+src/tools.ts               BaseTool per MCP tool
 src/parse/                 USFM/OSIS → verses; commentary / scholarship sections
-src/ref/                   book-name and versification mapping
+src/ref.ts                 book-name and versification mapping
 src/chunk/                 passage boundaries, overlap
 src/embed/                 TextEmbeddingGenerator wiring
 src/store/                 Postgres access

@@ -7,12 +7,15 @@
     "db:up": "docker compose up -d --wait",
     "db:down": "docker compose down",
     "ingest": "tsx src/ingest.ts",
-    "ingest:text": "tsx src/ingest.ts --no-embed"
+    "ingest:text": "tsx src/ingest.ts --no-embed",
+    "start": "tsx --env-file=.env src/mcp.ts"
   },
   "dependencies": {
     "@jbcbdse/charlie-core": "^1.0.0",
+    "@jbcbdse/charlie-mcp-server": "^1.0.0",
     "@jbcbdse/charlie-ollama": "^1.0.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "zod": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.18.0",
